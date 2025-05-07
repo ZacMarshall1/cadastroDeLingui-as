@@ -10,8 +10,8 @@
         $nome = htmlspecialchars($nome, ENT_QUOTES, 'UTF-8');
         
         // Converter valores numéricos para string
-        $tamanho = (string) $tamanho;
-        $preco = (string) $preco;
+        $tamanho = $tamanho;
+        $preco = $preco;
 
         $q = "INSERT INTO linguicas (nome, tamanho, preco) VALUES (?, ?, ?)";
 
